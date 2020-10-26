@@ -7,7 +7,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={require('./assets/logo.jpg')}  style={styles.image}/>
+        <Image source={require('./assets/logo.png')}  style={styles.image}/>
         <Button
           title="Commencer"
           onPress={this._handleOpenWithWebBrowser}
