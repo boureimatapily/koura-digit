@@ -16,8 +16,14 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.koura-digit.koura-digit",
+      "versionCode": 1
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.koura-digit.koura-digit",
+      "buildNumber": "1.0.0"
     },
     "web": {
       "favicon": "./assets/logo.png"
