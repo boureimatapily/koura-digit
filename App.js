@@ -1,21 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Button, View, StyleSheet, Image} from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
+import Constants from 'expo-constants';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Image source={require('./assets/logo.jpg')}  style={styles.image}/>
+        <Button
+          title="Commencer"
+          onPress={this._handleOpenWithWebBrowser}
+          style={styles.button}
+        />
+      </View>
+    );
+  }
+
+  _handleOpenWithWebBrowser = () => {
+    WebBrowser.openBrowserAsync('https://koura-digit.com/');
+  };
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: '#ecf0f1',
   },
+  button: {
+    marginVertical: 10,
+    width:100
+  },
+  image:{
+    height:350,
+    width:300
+  }
 });
