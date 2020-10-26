@@ -17,13 +17,10 @@
       "**/*"
     ],
     "android": {
-      "package": "com.koura-digit.koura-digit",
-      "versionCode": 1
+      "package": "com.kouradigit.kouradigit"
     },
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.koura-digit.koura-digit",
-      "buildNumber": "1.0.0"
+      "supportsTablet": true
     },
     "web": {
       "favicon": "./assets/logo.png"
