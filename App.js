@@ -41,10 +41,12 @@ const styles = StyleSheet.create({
   },
   image:{
     height:350,
-    width:300
+    width:300,
+    borderRadius:100
   },
   bnv:{
-    fontSize:20
+    fontSize:20,
+    fontWeight:"bold"
   },
   btn:{
     backgroundColor:"green",
