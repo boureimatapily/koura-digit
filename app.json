@@ -20,7 +20,8 @@
       "package": "com.kouradigit.kouradigit"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kouradigit.kouradigit"
     },
     "web": {
       "favicon": "./assets/favicon.png"
