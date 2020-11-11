@@ -17,11 +17,11 @@
       "**/*"
     ],
     "android": {
-      "package": "com.koura-digit.koura-digit"
+      "package": "com.koura_digit.koura_digit"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.koura-digit.koura-digit"
+      "bundleIdentifier": "com.koura_digit.koura_digit"
     },
     "web": {
       "favicon": "./assets/favicon.png"
